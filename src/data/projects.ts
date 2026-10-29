@@ -1,4 +1,3 @@
-typescript
 export type Project = {
   name: string
   summary: string
@@ -72,7 +71,7 @@ export const projects: Project[] = [
   {
     name: 'AgoraCampus',
     summary:
-      'University web platform developed with Vue.js and Laravel to centralize courses, academic schedules, messages, user profiles, and academic dashboards.',
+      'University web platform developed with Vue.js and Laravel to centralize academic information, learning resources, schedules, communication, and role-based dashboards.',
     techStack: [
       'Vue 3',
       'Vite',
@@ -82,6 +81,8 @@ export const projects: Project[] = [
       'MySQL',
       'REST API',
       'Axios',
+      'Robot Framework',
+      'QA Automation',
     ],
     features: [
       'Student and administrative dashboards',
@@ -91,8 +92,10 @@ export const projects: Project[] = [
       'User profile management',
       'QR code scanning and quick access to features',
       'Decoupled frontend/backend architecture',
+      'Development and functional QA contribution',
+      'Automated UI test scenarios with Robot Framework',
     ],
-    githubLink: 'https://github.com/sofiastron/AgoraCampus.git',
+    githubLink: 'https://github.com/sofiastron/AgoraCampus',
     demoLink: 'https://example.com/agora-campus-demo',
     accent: 'from-cyan-500/20 via-sky-500/15 to-violet-500/20',
   },
