@@ -51,6 +51,11 @@ export const projects: Project[] = [
       'PostgreSQL',
       'Stripe',
       'JWT',
+      'Playwright',
+      'Robot Framework',
+      'Appium',
+      'JMeter',
+      'QA Automation',
     ],
     features: [
       'Bus line selection',
