@@ -56,6 +56,8 @@ export const projects: Project[] = [
       'Appium',
       'JMeter',
       'QA Automation',
+      'GitHub Actions',
+      'CI/CD',
     ],
     features: [
       'Bus line selection',
@@ -69,7 +71,8 @@ export const projects: Project[] = [
       'Backend deployment',
     ],
     githubLink: 'https://github.com/ikraammel/eBus_frontend',
-    demoLink: 'https://example.com/ebus-demo',
+    githubLink:'https://github.com/FATIMA-BOUSMITI/eBus-qa-automation',
+    demoLink: 'https://ebus-frontend-1an4.onrender.com/',
     accent: 'from-emerald-500/20 via-teal-500/15 to-cyan-500/20',
   },
 
