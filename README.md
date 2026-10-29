@@ -65,7 +65,7 @@ Contributed to a smart transport application built with Flutter, Spring Boot, Po
 - Investigated functional workflows, defects, and test-environment limitations.
 - Documented execution results and QA evidence.
 
-[💻 Frontend Repository](https://github.com/ikraammel/eBus_frontend) · [🔎 QA Automation Repository](https://github.com/FATIMA-BOUSMITI/eBus-qa-automation)
+[💻 Frontend](https://github.com/ikraammel/eBus_frontend) · [🔎 QA](https://github.com/FATIMA-BOUSMITI/eBus-qa-automation)
 
 ### 🎓 Agora Campus — Full-Stack Development & QA Automation
 

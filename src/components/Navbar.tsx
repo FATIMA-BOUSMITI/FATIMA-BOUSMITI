@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import heroImage from '../assets/hero.png'
 
 const navItems = [
   { label: 'About', href: '#about' },
@@ -18,7 +19,7 @@ export function Navbar() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <a href="#home" className="flex items-center gap-3 text-sm font-semibold tracking-[0.18em] text-slate-900 uppercase">
           <img
-            src="/profile.jpeg"
+            src={heroImage}
             alt="Fatima Bousmiti"
             className="h-9 w-9 rounded-lg border border-slate-200 object-cover shadow-sm"
           />

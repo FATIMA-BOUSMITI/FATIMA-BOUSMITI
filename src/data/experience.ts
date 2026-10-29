@@ -4,6 +4,8 @@ export type ExperienceItem = {
   title: string
   summary?: string
   responsibilities?: string[]
+  achievements?: string[]
+  softSkills?: string[]
   techStack?: string[]
 }
 
@@ -20,6 +22,20 @@ export const experience: ExperienceItem[] = [
       'Documented and validated REST APIs using Swagger/OpenAPI and Postman.',
       'Automated tests and implemented the CI/CD pipeline.',
       'Contributed to API development, testing, and validation.',
+    ],
+
+    achievements: [
+      'Delivered secure authentication and identity-management workflows for a microservices-based platform.',
+      'Contributed to frontend, backend, API documentation, and test automation activities across the delivery cycle.',
+      'Improved release confidence through functional, API, security, and performance validation supported by CI/CD practices.',
+    ],
+
+    softSkills: [
+      'Team collaboration',
+      'Analytical problem-solving',
+      'Clear technical communication',
+      'Adaptability',
+      'Quality mindset',
     ],
 
     techStack: [
@@ -55,6 +71,20 @@ export const experience: ExperienceItem[] = [
       'Implemented dashboards and storage capacity alerts.',
       'Managed and tracked internal IT tickets.',
       'Performed unit testing and improved the application’s security, reliability, and usability.',
+    ],
+
+    achievements: [
+      'Delivered a centralized ticket-management solution to improve the tracking of IT incidents and interventions.',
+      'Created dashboards and storage alerts to make operational information easier to monitor.',
+      'Applied UML design, development, and testing practices throughout the internship project.',
+    ],
+
+    softSkills: [
+      'Requirements analysis',
+      'Autonomy',
+      'Time management',
+      'Attention to detail',
+      'User-focused communication',
     ],
 
     techStack: [

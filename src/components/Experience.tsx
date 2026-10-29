@@ -21,18 +21,31 @@ export function Experience() {
 
               {item.summary && (
                 <div className="mt-4 rounded-2xl border border-slate-200 bg-slate-50 p-4">
-                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">Résumé du stage</p>
+                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">Internship Overview</p>
                   <p className="mt-2 text-base leading-7 text-slate-700">{item.summary}</p>
                 </div>
               )}
 
               {item.responsibilities && item.responsibilities.length > 0 && (
                 <div className="mt-5">
-                  <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">Responsabilités</p>
+                  <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">Key Responsibilities</p>
                   <ul className="space-y-2 pl-5 text-base leading-7 text-slate-700">
                     {item.responsibilities.map((task) => (
                       <li key={task} className="list-disc">
                         {task}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {item.achievements && item.achievements.length > 0 && (
+                <div className="mt-5">
+                  <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">Key Contributions</p>
+                  <ul className="space-y-2 pl-5 text-base leading-7 text-slate-700">
+                    {item.achievements.map((achievement) => (
+                      <li key={achievement} className="list-disc">
+                        {achievement}
                       </li>
                     ))}
                   </ul>
@@ -49,6 +62,22 @@ export function Experience() {
                         className="rounded-full border border-cyan-200 bg-cyan-50 px-3 py-1.5 text-sm font-medium text-cyan-800 shadow-sm"
                       >
                         {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {item.softSkills && item.softSkills.length > 0 && (
+                <div className="mt-6">
+                  <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">Professional Skills</p>
+                  <div className="flex flex-wrap gap-2">
+                    {item.softSkills.map((skill) => (
+                      <span
+                        key={skill}
+                        className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm font-medium text-slate-700"
+                      >
+                        {skill}
                       </span>
                     ))}
                   </div>

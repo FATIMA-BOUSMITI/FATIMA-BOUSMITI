@@ -9,11 +9,11 @@ export function Projects() {
           <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl"></h2>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-2">
+        <div className="grid items-start gap-8 lg:grid-cols-2">
           {projects.map((project) => (
             <article
               key={project.name}
-              className="group overflow-hidden rounded-[28px] border border-slate-200 bg-white/80 shadow-[0_0_25px_rgba(15,23,42,0.04)] transition hover:-translate-y-1 hover:border-cyan-300"
+              className="group h-fit overflow-hidden rounded-[28px] border border-slate-200 bg-white/80 shadow-[0_0_25px_rgba(15,23,42,0.04)] transition hover:-translate-y-1 hover:border-cyan-300"
             >
               <div className={`h-40 bg-gradient-to-br ${project.accent}`} />
               <div className="p-6">
@@ -32,7 +32,7 @@ export function Projects() {
                 </div>
 
                 <div className="mt-6">
-                  <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Main features</p>
+                  <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Key Contributions</p>
                   <ul className="space-y-2 text-sm leading-6 text-slate-700">
                     {project.features.map((feature) => (
                       <li key={feature} className="flex gap-2">
@@ -59,17 +59,19 @@ export function Projects() {
                       rel="noreferrer"
                       className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:border-cyan-300 hover:text-cyan-700"
                     >
-                      QA Automation Repository
+                      QA
                     </a>
                   )}
-                  <a
-                    href={project.demoLink}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center justify-center rounded-full bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-700"
-                  >
-                    Live Demo
-                  </a>
+                  {project.demoLink && (
+                    <a
+                      href={project.demoLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center justify-center rounded-full bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-700"
+                    >
+                      Live Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </article>

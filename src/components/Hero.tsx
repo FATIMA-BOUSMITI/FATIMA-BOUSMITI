@@ -1,3 +1,5 @@
+import heroImage from '../assets/hero.png'
+
 type SocialLinkProps = {
   href: string
   label: string
@@ -40,12 +42,12 @@ export function Hero() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-14 lg:grid-cols-[1.2fr_0.8fr]">
           <div>
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-100 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.2em] text-slate-600">
+            <div className="mb-6 inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-emerald-600">
               <span className="h-2 w-2 rounded-full bg-emerald-500" />
               Available for opportunities
             </div>
 
-            <h1 className="max-w-2xl text-4xl font-black leading-tight text-slate-900 sm:text-5xl lg:text-7xl">
+            <h1 className="hero-title-reveal max-w-2xl text-4xl font-black leading-tight text-slate-900 sm:text-5xl lg:text-7xl">
               Hi, I&apos;m{' '}
               <span className="text-slate-900">
                 Fatima
@@ -53,15 +55,15 @@ export function Hero() {
             </h1>
 
             <p className="mt-6 text-xl font-medium text-slate-700 sm:text-2xl">
-              Computer Engineering Student
+              Software Engineering Student | QA Engineer
             </p>
 
             <p className="mt-3 text-lg text-slate-600 sm:text-xl">
-              QA Tester | Mobile Developer | Backend Developer
+              Manual &amp; Automated Testing | Java / Spring Boot
             </p>
 
             <p className="mt-6 max-w-xl text-base leading-7 text-slate-600 sm:text-lg">
-              I am a QA-focused developer passionate about software quality, functional testing, API validation, mobile applications, and secure backend systems.
+              My profile is focused on QA automation and software quality, with hands-on experience in automated UI testing, REST API testing, performance testing, and CI/CD practices for reliable, secure digital products.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -72,7 +74,7 @@ export function Hero() {
                 View Projects
               </a>
               <a
-                href="/Fatima-Bousmiti-CV.pdf"
+                href="/Fatima-Bousmiti-CV.pdf.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50"
@@ -97,44 +99,12 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="relative flex justify-center">
-            <div className="relative w-full max-w-md rounded-[2rem] border border-slate-200 bg-white/90 p-3 shadow-[0_12px_30px_rgba(15,23,42,0.06)] backdrop-blur-xl">
-              <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-slate-100 via-white to-slate-50" />
-              <div className="relative">
-                <div className="mb-3 flex items-center justify-between">
-                  <div className="flex gap-2">
-                    <span className="h-3 w-3 rounded-full bg-rose-400" />
-                    <span className="h-3 w-3 rounded-full bg-amber-400" />
-                    <span className="h-3 w-3 rounded-full bg-emerald-400" />
-                  </div>
-                  <span className="rounded-full border border-slate-200 bg-slate-50 px-2 py-1 text-[10px] uppercase tracking-[0.2em] text-slate-600">
-                    profile
-                  </span>
-                </div>
-
-                <div className="overflow-hidden rounded-[1.5rem] border border-slate-200 bg-slate-50">
-                  <img
-                    src="/profile.jpeg"
-                    alt="Fatima Bousmiti"
-                    className="h-[480px] w-full object-cover object-center"
-                  />
-                </div>
-
-                <div className="mt-4 rounded-2xl border border-slate-200 bg-white p-4">
-                  <div className="flex items-center justify-between gap-4">
-                    <div>
-                      <p className="text-lg font-semibold text-slate-900">Fatima Bousmiti</p>
-                      <p className="text-sm text-slate-600">Computer Engineering Student</p>
-                    </div>
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-900 text-sm font-bold text-white">
-                      FB
-                    </div>
-                  </div>
-
-                  
-                </div>
-              </div>
-            </div>
+          <div className="flex justify-center">
+            <img
+              src={heroImage}
+              alt="Fatima Bousmiti"
+              className="w-full max-w-md rounded-[2rem] object-cover object-center shadow-[0_12px_30px_rgba(15,23,42,0.12)]"
+            />
           </div>
         </div>
       </div>

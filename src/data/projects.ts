@@ -6,7 +6,7 @@ export type Project = {
   githubLink: string
   githubLabel?: string
   qaLink?: string
-  demoLink: string
+  demoLink?: string
   accent: string
 }
 
@@ -20,7 +20,7 @@ export const projects: Project[] = [
       'Spring Boot',
       'Spring Security',
       'JWT',
-      'OTP',
+      
       'React',
       'TypeScript',
       'PostgreSQL',
@@ -52,17 +52,17 @@ export const projects: Project[] = [
     ],
     githubLink:
       'https://github.com/FATIMA-BOUSMITI/Platform-collaboration-ocp-frontend',
-    demoLink: 'https://example.com/ocp-collab-demo',
     accent: 'from-indigo-500/20 via-blue-500/15 to-cyan-500/20',
   },
 
   {
     name: 'eBus Smart Transport System',
     summary:
-      'Smart transportation application designed to simplify bus selection, tracking, subscriptions, and secure digital payments for users.',
+      'Academic transport application combining a Flutter mobile app, Spring Boot REST APIs, and software-quality practices.',
     techStack: [
       'Flutter',
       'Dart',
+      'Java',
       'Spring Boot',
       'PostgreSQL',
       'Stripe',
@@ -72,22 +72,27 @@ export const projects: Project[] = [
       'Appium',
       'JMeter',
       'QA Automation',
+      'Postman',
+      'JUnit 5',
       'GitHub Actions',
       'CI/CD',
     ],
     features: [
-      'Bus line selection',
-      'Real-time transport tracking',
-      'Transport subscriptions',
-      'Stripe payment integration',
-      'User profile and document management',
-      'Lost and found item management',
-      'JWT authentication',
-      'REST APIs',
-      'Backend deployment',
+      'Developed Flutter and Spring Boot transport workflows for bus lines, subscriptions, and lost-property management',
+      'Designed JWT-secured REST APIs for authentication and user management',
+      'Integrated Stripe payments for transport subscriptions',
+      'Worked with PostgreSQL, user profiles, and document-management features',
+      'Designed and executed functional tests for user journeys and business rules',
+      'Performed manual REST API validation with Postman',
+      'Automated API checks with Robot Framework',
+      'Created unit and integration tests with JUnit 5',
+      'Automated UI and end-to-end scenarios with Playwright',
+      'Prepared performance scenarios with JMeter',
+      'Integrated automated checks into a GitHub Actions CI/CD workflow',
+      'Prepared backend deployment and documented test results and defects',
     ],
     githubLink: 'https://github.com/ikraammel/eBus_frontend',
-    githubLabel: 'Frontend Repository',
+    githubLabel: 'Frontend',
     qaLink: 'https://github.com/FATIMA-BOUSMITI/eBus-qa-automation',
     demoLink: 'https://ebus-frontend-1an4.onrender.com/',
     accent: 'from-emerald-500/20 via-teal-500/15 to-cyan-500/20',
@@ -96,7 +101,7 @@ export const projects: Project[] = [
   {
     name: 'AgoraCampus',
     summary:
-      'University web platform developed with Vue.js and Laravel to centralize academic information, learning resources, schedules, communication, and role-based dashboards.',
+      'Academic university platform combining Vue.js and Laravel with UI/UX design, student services, and facial-recognition-assisted attendance.',
     techStack: [
       'Vue 3',
       'Vite',
@@ -106,22 +111,21 @@ export const projects: Project[] = [
       'MySQL',
       'REST API',
       'Axios',
-      'Robot Framework',
-      'QA Automation',
+      'Figma',
+      'Python',
+      'Flask',
+      'Facial Recognition',
+      'Manual Functional Testing',
     ],
     features: [
-      'Student and administrative dashboards',
-      'Academic calendar management',
-      'Course and learning resource management',
-      'Internal messaging and communication',
-      'User profile management',
-      'QR code scanning and quick access to features',
-      'Decoupled frontend/backend architecture',
-      'Development and functional QA contribution',
-      'Automated UI test scenarios with Robot Framework',
+      'Designed UI/UX mockups with Figma',
+      'Developed university workflows with Vue.js 3 and Laravel',
+      'Implemented course, timetable, and user-management features',
+      'Developed student-to-teacher messaging workflows',
+      'Integrated a Python/Flask facial-recognition microservice using a camera for attendance tracking',
+      'Performed manual functional testing for courses, messaging, user journeys, and attendance recording',
     ],
     githubLink: 'https://github.com/sofiastron/AgoraCampus',
-    demoLink: 'https://example.com/agora-campus-demo',
     accent: 'from-cyan-500/20 via-sky-500/15 to-violet-500/20',
   },
 
@@ -133,20 +137,49 @@ export const projects: Project[] = [
       'Playwright',
       'TypeScript',
       'Page Object Model',
+      'GitHub Actions',
+      'CI/CD',
       'QA Automation',
       'Functional Testing',
     ],
     features: [
-      'Login tests with valid and invalid credentials',
-      'Product add/remove flow validation',
-      'Cart state verification',
-      'Reusable test structure using POM',
-      'Functional UI test automation for web scenarios',
+      'Designed functional scenarios for authentication, catalog, cart, and checkout workflows',
+      'Automated UI and end-to-end scenarios with Playwright and TypeScript',
+      'Structured reusable test scripts with the Page Object Model',
+      'Validated expected behavior with automated assertions',
+      'Generated and analyzed execution reports to investigate test failures',
+      'Integrated automated checks into a GitHub Actions CI pipeline',
     ],
     githubLink:
       'https://github.com/FATIMA-BOUSMITI/SauceDemo-QA-Automation',
-    demoLink: 'https://example.com/saucedemo-demo',
     accent: 'from-amber-500/20 via-orange-500/15 to-rose-500/20',
+  },
+
+  {
+    name: 'REST API Test Automation',
+    summary:
+      'Personal QA automation project focused on validating REST APIs, authentication, CRUD operations, error handling, and business rules.',
+    techStack: [
+      'Robot Framework',
+      'Python',
+      'RequestsLibrary',
+      'REST API',
+      'JSON',
+      'GitHub Actions',
+      'CI/CD',
+    ],
+    features: [
+      'Designed REST API scenarios for authentication, CRUD operations, and error cases',
+      'Automated API checks with Robot Framework and Python RequestsLibrary',
+      'Validated JSON responses, HTTP status codes, and returned API data',
+      'Executed positive and negative tests for error handling and business rules',
+      'Integrated automated tests into a GitHub Actions CI workflow',
+      'Automated test execution on code changes and generated test reports',
+    ],
+    githubLink:
+      'https://github.com/FATIMA-BOUSMITI/QA-Automation-Portfolio',
+    githubLabel: 'QA Automation Repository',
+    accent: 'from-fuchsia-500/20 via-purple-500/15 to-indigo-500/20',
   },
 
   {
