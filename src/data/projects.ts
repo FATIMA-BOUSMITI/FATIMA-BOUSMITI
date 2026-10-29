@@ -4,6 +4,8 @@ export type Project = {
   techStack: string[]
   features: string[]
   githubLink: string
+  githubLabel?: string
+  qaLink?: string
   demoLink: string
   accent: string
 }
@@ -85,7 +87,8 @@ export const projects: Project[] = [
       'Backend deployment',
     ],
     githubLink: 'https://github.com/ikraammel/eBus_frontend',
-    githubLink:'https://github.com/FATIMA-BOUSMITI/eBus-qa-automation',
+    githubLabel: 'Frontend Repository',
+    qaLink: 'https://github.com/FATIMA-BOUSMITI/eBus-qa-automation',
     demoLink: 'https://ebus-frontend-1an4.onrender.com/',
     accent: 'from-emerald-500/20 via-teal-500/15 to-cyan-500/20',
   },

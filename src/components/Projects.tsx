@@ -50,8 +50,18 @@ export function Projects() {
                     rel="noreferrer"
                     className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:border-cyan-300 hover:text-cyan-700"
                   >
-                    GitHub
+                    {project.githubLabel ?? 'GitHub'}
                   </a>
+                  {project.qaLink && (
+                    <a
+                      href={project.qaLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:border-cyan-300 hover:text-cyan-700"
+                    >
+                      QA Automation Repository
+                    </a>
+                  )}
                   <a
                     href={project.demoLink}
                     target="_blank"
